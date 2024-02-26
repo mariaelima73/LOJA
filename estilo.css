@@ -1,27 +1,34 @@
+*{
+    margin: 0;
+}
 body{
     background-color: rgb(159, 223, 159);
 }
 header{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgb(236, 132, 57);
-    font-size: 25px;
+    /* background-image: url(home.jpg); */
+    font-size: 12px; /* Aletrado de 25 para a Resp.*/
     padding: 10px;
+    margin-bottom: 20px;
 }
 .lista{
     list-style: none;
     display: flex;
     margin-left: auto;
+    padding-left: 0px;
+    padding: 20px;
 }
 .lista a{
     text-decoration: none;
-    padding-left: 50px;
+    padding-left: 9px; /* Alterado de 50 para a Resp.*/
     color: rgb(63, 31, 8);
 }
 .lista a:hover{
     color: wheat;
 }
 header img{
-    width: 500px;
+    width: 100px; /* Alterado de 500 para a Resp.*/
     border-radius: 10px;
 }
 nav{
@@ -32,48 +39,52 @@ main{
 }
 main h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 60px;
+    font-size: 35px; /*Alterado de 60 para a Resp.*/
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px; /*Alterado de 50 para a Resp.*/
     background-color: rgb(130, 185, 79);
     padding: 5px;
 }
 main p{
-    font-size: 25px;
+    font-size: 14px; /*Alterado de 25 para a Resp.*/
     text-align: center;
-    margin-bottom: 50px;
+    padding: 10px;
+    margin-bottom: 20px; /*Alterado de 50 para a Resp.*/
 }
 main h2{
-    font-size: 40px;
+    font-size: 20px; /*Alterado de 40 para a Resp.*/
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px; /*Alterado de 50 para a Resp.*/
     background-color: rgb(236, 132, 57);
     padding: 8px;
 }
+main h3{
+    font-size: 15px; /*Alterado de 30 para a Resp.*/
+    margin-bottom: 15px;
+}
 article{
     background-color: rgb(130, 185, 79);
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 12px; /*Alterado de 20 para a Resp.*/
     text-align: center;
-    /* maxwidth */
-    max-width: 500px;
+    max-width: 200px; /*Alterado de 500 para a Resp.*/
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
-}
-article h3{
-    font-size: 30px;
+    margin-bottom: 5px;
 }
 article img{
     width: 90%;
-    border-radius: 10px; 
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+article p{
+    margin-bottom: 0px;
 }
 button{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 25px;
+    font-size: 15px; /*Alterado de 25 para a Resp.*/
     border-radius: 20px;
     background-color: rgb(236, 132, 57);
     color: rgb(63, 31, 8);
@@ -84,16 +95,64 @@ button:hover{
 }
 div{
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); */
-    grid-template-columns: repeat(auto-fill, minmax(600px, 10fr));
-    gap: 50px;
+    /*Alterado de grid-template-columns: repeat(auto-fill, minmax(600px, 10fr)); para Resp. */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px; /*Alterado de 50 para a Resp.*/
 }
 footer{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: rgb(236, 132, 57);
-    font-size: 18px;
-    padding: 10px;
+    font-size: 11px; /*Alterado de 18 para a Resp.*/
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
 }
 .autor{
     margin-right: auto;
+}
+@media (min-width: 768px) {
+    header {
+        font-size: 20px;
+    }
+    header img {
+        width: 300px;
+    }
+    .lista a {
+        padding-left: 50px;
+    }
+    main h1 {
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+    main p{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    main h2{
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    main h3{
+        font-size: 30px;
+    }
+    article{
+        padding: 20px;
+        max-width: 500px;
+    }
+    article p{
+        margin-bottom: 0px;
+    }
+    button {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+    div{
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 50px;
+    }
+    footer{
+        font-size: 18px;
+    }
 }
